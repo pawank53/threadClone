@@ -9,13 +9,15 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.threadClone"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.threadClone"
     },
     "web": {
       "bundler": "metro",
@@ -32,7 +34,16 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      [
+        "@sentry/react-native/expo",
+        {
+          "organization": "threadClone",
+          "project": "threadClone",
+          "url": "https://sentry.io/"
+        }
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
